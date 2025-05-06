@@ -7,6 +7,8 @@ package dev.icerock.moko.socket
 data class SocketOptions(
     val queryParams: Map<String, String>?,
     val transport: Transport = Transport.DEFAULT
+    val secure: Boolean? = false,
+    val path: Boolean? = false
 ) {
     enum class Transport {
         WEBSOCKET,
